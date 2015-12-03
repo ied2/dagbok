@@ -129,7 +129,7 @@ function index(req, res, next) {
 
   users.listText(user.username, date, function (err, all) {
     // req.session.diary = "prump";
-    res.render('comments', { title: 'comments zone',
+    res.render('comments', { title: 'Mitt svæði',
       user: user,
       text: all });
   })
@@ -163,7 +163,7 @@ function indexPost(req, res, next) {
 
     users.listText(user.username, new Date(), function (err, all) {
     // console.log(all)
-    res.render('comments', { title: 'comments zone',
+    res.render('comments', { title: 'Mitt svæði',
       user: user,
       text: all });
     })
