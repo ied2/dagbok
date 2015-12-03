@@ -1,0 +1,24 @@
+extends layout
+
+block content
+    .container.comments
+        .row
+            div.col-sm-8
+                div.form-group
+                    input.form-control#diaryTitle(name="title" type="text", placeholder="Titill")
+                div.form-group
+                    textarea.form-control#diaryText(name="text" rows="15", placeholder="Kæra dagbók...")
+                button.btn.btn-success#saveButton Vista
+                button.btn.btn-danger.pull-right#deleteButton Eyða
+            div.class-sm-6
+                div.class-sm-12.datepickerContainer
+                    input.datepicker(type="text" name="date")
+                div.class.sm-12.diaryContainer
+                    if text
+                      ul
+                        each u in text
+                          li= s
+                            p.note(id=""+u.id+"")= u.title
+                            p= u.date.getDate() + "-" + u.date.getMonth() + "-" + u.date.getFullYear()
+                            hr
+        a.button.btn.btn-primary.logoutButton(href='/logout') Útskrá

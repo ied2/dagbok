@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  .container
+      div.list-group
+        a.list-group-item(href='/') Heima
+        a.list-group-item.active(href='/create') Nýr aðgangur
+        a.list-group-item(href='/login') Innskráning
+      if post
+        if !success
+          p.failed Villa við að útbúa notanda
+        else
+          p.success User created
+      form.form-signin(role='form', method='post', action='/create')
+        input.form-control(type='text', id='username', name='username' placeholder='Notendanafn', value=username, required='', autofocus='')
+        input.form-control(type='password', id='password', name='password', placeholder='Lykilorð', required='')
+        button.btn.btn-lg.btn-success.btn-block.createButton(type='submit') Skrá

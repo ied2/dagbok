@@ -1,0 +1,127 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: rgba(197, 197, 197, 0.34);
+}
+
+img {
+	max-width: 200px;
+	display: block;
+    margin: auto;
+}
+.container {
+	max-width: 400px;
+}
+
+a {
+  color: #00B7FF;
+}
+
+hr {
+	border-top: 1px solid rgb(152, 152, 152);;
+}
+
+
+/*index*/
+
+h1 {
+	font-size: 40px;
+}
+
+
+/*Login*/
+
+.checkbox {
+	margin-left: 20px;
+}
+
+form {
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+
+/*Create*/
+
+.createButton {
+	margin-top: 10px;
+}
+
+p.failed {
+	color: rgb(192, 0, 0);
+}
+
+p.success {
+	color: green;
+}
+
+
+/*Comments*/
+
+ul {
+	max-height: 300px;
+	overflow: auto;
+}
+
+.note {
+	cursor: pointer;
+	color: blue;
+}
+
+
+#textArea {
+	width: 400px;
+	height: 100px;
+}
+
+li {
+	list-style-type: none;
+}
+
+#comment {
+	font-weight: bold;
+}
+
+.comments {
+	max-width: 800px;
+}
+
+.logoutButton {
+	margin-top: 10px;
+}
+
+.logoutButton a {
+	color: white;
+	text-decoration: none;
+}
+
+@media (min-width: 1000px) {
+    .logoutButton {
+    	position: absolute;
+    	top: 40px;
+    	left: 30px;
+    	margin-top: 0px;
+    }
+}
+
+
+/*Datepicker*/
+
+.datepickerContainer {
+	margin-bottom: 20px;
+}
+
+.datepicker {
+	cursor: pointer;
+}
+
+@media (max-width: 767px) {
+	.datepickerContainer {
+		margin-top:10px;
+	}
+
+    .datepicker {
+    	margin-top: 10px;
+    	margin-left: 14px;
+    }
+}
